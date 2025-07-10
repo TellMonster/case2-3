@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Слайдер изображений</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Галерея изображений</h1>
+        </header>
+
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide active">
+                    <img src="https://www.meme-arsenal.com/memes/99e800de033dcde4c492ade2b8f6184e.jpg" alt="МАШИНА 1">
+                </div>
+                <div class="slide">
+                    <img src="https://news.store.rambler.ru/img/7a31f88e31395e5612bfe600dc7c3990?img-format=auto&img-1-resize=height:400,fit:max&img-2-filter=sharpen" alt="МАШИНА 2">
+                </div>
+                <div class="slide">
+                    <img src="https://img.icity.life//upload/2023/137/068/523/full/068523a464378c966fc0562e144b62cd.jpg" alt="МАШИНА 3">
+                </div>
+                <div class="slide">
+                    <img src="https://bipbap.ru/wp-content/uploads/2017/11/1-4-640x480.jpg" alt="МАШИНА 4">
+                </div>
+                <div class="slide">
+                    <img src="https://hdpic.club/uploads/posts/2021-12/1639458402_7-hdpic-club-p-krutikh-mashin-na-zastavku-9.jpg" alt="МАШИНА  5">
+                </div>
+            </div>
+
+            <button class="nav-btn prev-btn" id="prevBtn">
+                <span>‹</span>
+            </button>
+            <button class="nav-btn next-btn" id="nextBtn">
+                <span>›</span>
+            </button>
+
+            <div class="controls">
+                <div class="nav-controls">
+                    <button class="control-btn nav-control" id="prevControlBtn">‹ Назад</button>
+                    <button class="control-btn nav-control" id="nextControlBtn">Вперед ›</button>
+                </div>
+                <button class="control-btn" id="playBtn">Воспроизвести</button>
+                <button class="control-btn" id="pauseBtn" style="display: none;">Пауза</button>
+                <div class="indicators">
+                    <span class="indicator active" data-slide="0"></span>
+                    <span class="indicator" data-slide="1"></span>
+                    <span class="indicator" data-slide="2"></span>
+                    <span class="indicator" data-slide="3"></span>
+                    <span class="indicator" data-slide="4"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
